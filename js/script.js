@@ -36,9 +36,11 @@ console.log("dealer hand value: " + getHandValue(dealerHand));
 document.getElementById("hit").onclick = function(){
     playerHand.push(getRandomInt(maxCards));
     if (getHandValue(playerHand) > 21) {
-        console.log("BUST ! ")
+        console.log("BUST ! ");
     }
     console.log("clickedy");
     console.log("New player hand : " + playerHand);
 }
 
+document.getElementById("player-hand").innerHTML = playerHand;
+document.getElementById("dealer-hand").innerHTML = dealerHand;
