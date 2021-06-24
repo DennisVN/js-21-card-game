@@ -1,9 +1,9 @@
 // Add card deck as array - 52 minus Jokers = 48
 let cardDeck = [
-    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11',
-    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11',
-    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11',
-    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11'
+    2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
+    2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
+    2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
+    2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11
 ];
 var maxCards = cardDeck.length;
 var playerHand;
@@ -21,8 +21,8 @@ function startGame() {
 
 function getHandValue(hand){
     var sum = 0;
-    for (var i = 0; i < hand.length; i ++ ) { // Once i = 2 we break out the loop
-        sum = sum + hand [i];
+    for (var i = 0; i < hand.length ; i++ ) { // Once i = 2 we break out the loop
+        sum += hand[i]
     }
     return sum;
 }
