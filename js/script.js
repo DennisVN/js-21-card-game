@@ -43,4 +43,5 @@ document.getElementById("hit").onclick = function(){
 }
 
 document.getElementById("player-hand").innerHTML = playerHand;
+document.getElementById("player-hand-value").innerHTML = getHandValue(playerHand);
 document.getElementById("dealer-hand").innerHTML = dealerHand;
