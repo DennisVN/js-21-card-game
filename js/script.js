@@ -26,6 +26,3 @@ console.log("dealer hand: " + dealerHand);
     });
 }*/
 
-console.log(maxCards);
-console.log(cardDeck);
-console.log(getRandomInt(maxCards) + " , " + getRandomInt(maxCards));
