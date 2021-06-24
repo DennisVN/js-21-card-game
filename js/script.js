@@ -1,17 +1,16 @@
-// Set RNG
-let rndmNumb = Math.floor(Math.random() * 52);
-console.log("rng " + rndmNumb); //WORKS
-// Add card deck as array
-var cardDeck = [
-    2,3,4,5,6,7,8,9,10,10,10,11,
-    2,3,4,5,6,7,8,9,10,10,10,11,
-    2,3,4,5,6,7,8,9,10,10,10,11,
-    2,3,4,5,6,7,8,9,10,10,10,11,
+// Add card deck as array - 52 minus Jokers = 48
+let cardDeck = [
+    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11',
+    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11',
+    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11',
+    '2', '3', '4', '5', '6', '7', '8', '9', '10', '10', '10', '11'
 ];
-//console.log(cardDeck); TEST - REMOVE LATER
+var maxCards = cardDeck.length;
 // Draw a card from card deck Array
-
-
+function getRandomInt(_maxCards){
+    return Math.floor( Math.random() * maxCards) + 1;
+}
+console.log(getRandomInt(cardDeck));
 
 
 
