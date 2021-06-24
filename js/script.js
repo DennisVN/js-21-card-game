@@ -27,19 +27,16 @@ function getHandValue(hand){
     return sum;
 }
 startGame();
-console.log("player hand: " + playerHand);
-console.log("player hand value: " + getHandValue(playerHand));
-console.log("dealer hand: " + dealerHand);
-console.log("dealer hand value: " + getHandValue(dealerHand));
-
-
 document.getElementById("hit").onclick = function(){
     playerHand.push(getRandomInt(maxCards));
+    dealerHand.push(getRandomInt(maxCards));
     if (getHandValue(playerHand) > 21) {
-        console.log("BUST ! ");
+        document.getElementById("player-hand").innerHTML = "BUST ! you drew " + getHandValue(playerHand);
+        console.log('bust');
+    } else {
+    document.getElementById("player-hand").innerHTML = playerHand ;
+    document.getElementById("dealer-hand").innerHTML = dealerHand ;
     }
-    console.log("clickedy");
-    console.log("New player hand : " + playerHand);
 }
 
 document.getElementById("player-hand").innerHTML = playerHand;
