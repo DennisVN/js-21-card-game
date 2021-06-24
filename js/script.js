@@ -33,9 +33,7 @@ console.log("dealer hand: " + dealerHand);
 console.log("dealer hand value: " + getHandValue(dealerHand));
 
 
-/*function drawCard () {
-    var pickCard = getElementByid("pickCard").addEventListener("click", {
-        
-    });
-}*/
+document.getElementById("hit").onclick = function(){
+    console.log("clickedy");
+}
 
