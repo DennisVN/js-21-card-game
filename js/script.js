@@ -10,16 +10,29 @@ var playerHand;
 var dealerHand;
 // Draw a card from card deck Array
 function getRandomInt(maxCards){
-    return Math.floor( Math.random() * maxCards) + 1;
+    var randomCard = Math.floor(cardDeck.length * Math.random());
+    return cardDeck[randomCard];
 };
 
 function startGame() {
     playerHand = [getRandomInt(maxCards), getRandomInt(maxCards)];
     dealerHand = [getRandomInt(maxCards), getRandomInt(maxCards)];
 }
+
+function getHandValue(hand){
+    var sum = 0;
+    for (var i = 0; i < hand.length; i ++ ) { // Once i = 2 we break out the loop
+        sum = sum + hand [i];
+    }
+    return sum;
+}
 startGame();
 console.log("player hand: " + playerHand);
+console.log("player hand value: " + getHandValue(playerHand));
 console.log("dealer hand: " + dealerHand);
+console.log("dealer hand value: " + getHandValue(dealerHand));
+
+
 /*function drawCard () {
     var pickCard = getElementByid("pickCard").addEventListener("click", {
         
