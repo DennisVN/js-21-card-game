@@ -10,7 +10,7 @@ PLAY FOR FREE WITHOUT DOWNLOAD HERE : https://dennisvn.github.io/js-21-card-game
 ![Screenshot](https://github.com/DennisVN/js-21-card-game/blob/main/images/screenshotUI.png)
 
 ## Disclaimer
-This project is a Work In Progress. For now you are able to test out the most basic functionalities for the Hit button. See below @ the WIP section, to see what you can expect later. 
+This project is a Work In Progress. For now you are able to test out the most basic functionalities for the Hit button. See below @ the WIP section, to see what you can expect later. Shoutout to all non-existent Patreon's ! 
 
 ## How it works
 - Refresh page to start new round.
