@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 15%;
+	padding-top: 25px;
+	background-color: #0fcfe065;
+	box-sizing: border-box;
+}
+
+header h1{
+	text-align: center;
+    top: 50%;
+	left: 50%;
+}
+
+.container{
+	position: relative;
+	height: 85%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+	background-color: #341ba35d;
+}
+
+.buttons{
+	width: 280px;
+	position: absolute;
+	top: 20%; 
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bn{
+	width: 6rem;
+	height: 6rem;
+    margin :5px;
+    border: 3px solid #f00de4;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 30px;
+    background-color: rgba(6, 247, 255, 0.781);
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.bn:hover{
+    background-color: #34e90cb0;
+    border-color: white;
+    color: white;
+}
+
+.player-container {
+    text-align: center;
+}
+
+.dealer-container {
+    text-align: center;
+}
+
+/* STYLE HAND AND HAND VALUE HMTL */
+#game-status {
+    
+}
+#dealer-hand {
+    
+}
+#dealer-hand-value {
+    
+}
+
+#player-hand-value {
+    
+}

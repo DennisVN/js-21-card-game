@@ -32,7 +32,7 @@ document.getElementById("hit").onclick = function(){
     dealerHand.push(getRandomInt(maxCards));
     if (getHandValue(playerHand) > 21) {
         document.getElementById("player-hand").innerHTML = "BUST ! you drew " + getHandValue(playerHand);
-        console.log('bust');
+        document.getElementById("game-status").innerHTML = "BUST ! REFRESH TO PLAY AGAIN "
     } else {
     document.getElementById("player-hand").innerHTML = playerHand ;
     document.getElementById("dealer-hand").innerHTML = dealerHand ;
