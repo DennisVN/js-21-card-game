@@ -1,4 +1,3 @@
-
 let cardDeck = [
     2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
     2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
@@ -38,9 +37,29 @@ document.getElementById("hit").onclick = function(){
     document.getElementById("player-hand-value").innerHTML = getHandValue(playerHand); // Show total
     document.getElementById("dealer-hand-value").innerHTML = getHandValue(dealerHand);
     if (getHandValue(playerHand) > 21) {
-        document.getElementById("player-hand").innerHTML = "BUST ! you drew " + getHandValue(playerHand);
-        document.getElementById("game-status").innerHTML = "BUST ! REFRESH TO PLAY AGAIN "
-    } else {
+        document.getElementById("player-hand-value").innerHTML = "BUST ! you drew " + getHandValue(playerHand);
+        document.getElementById("game-status").innerHTML = "PLAYER BUST"
+    } else if (getHandValue(dealerHand) > 21) {
+        document.getElementById("dealer-hand-value").innerHTML = "BUST ! dealer drew " + getHandValue(dealerHand);
+        document.getElementById("game-status").innerHTML = "DEALER BUST"
+    }
+    
+}
+
+/*const mode;
+function setup() {
+    mode = 0;
+}
+
+function draw () {
+    clear();
+    if (mode == 0) {
+        document.getElementById("game-status").innerHTML = "PRESS ENTER TO CONTINUE";
     }
 }
-    
+
+function kepressed() {
+    if (KeyCode === ENTER) {
+        mode = 1;
+    }
+}*/
