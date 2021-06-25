@@ -3,7 +3,7 @@
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-	<title>Rock Paper Scissors</title>
+	<title>JS 21 Card Game</title>
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -15,20 +15,21 @@
 	</header>
     <div class="container">
         <div class="player-container">
-            <h1>Player Hand</h1>
+            <h1>YOUR HAND</h1>
             <div id="player-hand"></div>
-            <h2>Player Hand Value </h2>
+            <h2>your total : </h2>
             <div id="player-hand-value"></div>
         </div>
         <div class="dealer-container">
-            <h1>Dealer Hand</h1>
+            <h1>AI HAND</h1>
             <div id="dealer-hand"></div>
-            <h2>Dealer Hand Value </h2>
+            <h2>AI total :</h2>
             <div id="dealer-hand-value"></div>
         </div>
+        <input type="button" class="bn" value="RESTART" onClick="location.href=location.href">
         <div id="game-status">Click "HIT" to draw a card</div>
-        <button id ="hit" class="bn" >Hit</button>
-        <button id ="stand" class="bn" >Stand</button>
+        <button id ="hit" class="bn" >HIT</button>
+        <button id ="stand" class="bn" >STAND</button>
     </div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
