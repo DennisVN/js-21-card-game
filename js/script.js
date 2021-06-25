@@ -1,4 +1,6 @@
-// Add card deck as array - 52 minus Jokers = 48
+var playing = false;
+var startButton;
+
 let cardDeck = [
     2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
     2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
