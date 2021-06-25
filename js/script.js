@@ -1,5 +1,3 @@
-var playing = false;
-var startButton;
 
 let cardDeck = [
     2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11,
@@ -17,10 +15,13 @@ function getRandomInt(maxCards){
 };
 
 function startGame() {
-    playerHand = [getRandomInt(maxCards), getRandomInt(maxCards)];
-    dealerHand = [getRandomInt(maxCards), getRandomInt(maxCards)];
+    playerHand = [getRandomInt(maxCards)]; // Get Card
+    dealerHand = [getRandomInt(maxCards)];
+    document.getElementById("player-hand").innerHTML = playerHand ; // Show Hand
+    document.getElementById("dealer-hand").innerHTML = dealerHand ;
+    document.getElementById("player-hand-value").innerHTML = getHandValue(playerHand); // Show total
+    document.getElementById("dealer-hand-value").innerHTML = getHandValue(dealerHand);
 }
-
 function getHandValue(hand){
     var sum = 0;
     for (var i = 0; i < hand.length ; i++ ) { // Once i = 2 we break out the loop
@@ -32,16 +33,14 @@ startGame();
 document.getElementById("hit").onclick = function(){
     playerHand.push(getRandomInt(maxCards));
     dealerHand.push(getRandomInt(maxCards));
+    document.getElementById("player-hand").innerHTML = playerHand ; // Show Hand
+    document.getElementById("dealer-hand").innerHTML = dealerHand ;
+    document.getElementById("player-hand-value").innerHTML = getHandValue(playerHand); // Show total
+    document.getElementById("dealer-hand-value").innerHTML = getHandValue(dealerHand);
     if (getHandValue(playerHand) > 21) {
         document.getElementById("player-hand").innerHTML = "BUST ! you drew " + getHandValue(playerHand);
         document.getElementById("game-status").innerHTML = "BUST ! REFRESH TO PLAY AGAIN "
     } else {
-    document.getElementById("player-hand").innerHTML = playerHand ;
-    document.getElementById("dealer-hand").innerHTML = dealerHand ;
     }
 }
-
-document.getElementById("player-hand").innerHTML = playerHand;
-document.getElementById("player-hand-value").innerHTML = getHandValue(playerHand);
-document.getElementById("dealer-hand").innerHTML = dealerHand;
-document.getElementById("dealer-hand-value").innerHTML = getHandValue(dealerHand);
+    
