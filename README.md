@@ -1,7 +1,7 @@
 # 🃏 WIP - 21 Card Game - WIP 🃏
 
 Welcome to more fine cuisine in the Casino Royale series for @becodeorg ! <br>This time it's the well known 21 game,
-also known as Black Jack. <b> I never played that much card games,<br> so if your a veteran in this game, there will be better 
+also known as BlackJack. <b> I never played that much card games,<br> so if your a veteran in this game, there will be better 
 versions out there for you ;). <br>The main intent of this project is building the logic and functions from scratch, rather than
 creating the next big mobile app. <br> Read what this is all about below. First up, have a peep ; <br><br>
 PLAY FOR FREE WITHOUT DOWNLOAD HERE : https://dennisvn.github.io/js-21-card-game/ 
