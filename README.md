@@ -1,10 +1,10 @@
 # 🃏 WIP - 21 Card Game - WIP 🃏
 
 Welcome to more fine cuisine in the Casino Royale series for @becodeorg ! <br>This time it's the well known 21 game,
-also known as Black Jack. <b> I never played that much card games, so if your a veteran in this game, there will be better 
-<br>version for you ;). The main intent of this project is building the logic and functions from scratch, rather than <br>
-creating the next big mobile app. Read what this is all about below. First up, have a peep ; 
-PLAY FOR FREE WITHOUT DOWNLOAD HERE : https://dennisvn.github.io/js-21-card-game/
+also known as Black Jack. <b> I never played that much card games,<br> so if your a veteran in this game, there will be better 
+versions out there for you ;). <br>The main intent of this project is building the logic and functions from scratch, rather than
+creating the next big mobile app. <br> Read what this is all about below. First up, have a peep ; <br><br>
+PLAY FOR FREE WITHOUT DOWNLOAD HERE : https://dennisvn.github.io/js-21-card-game/ 
 <br>
 # UI Screenshot
 ![Screenshot](https://github.com/DennisVN/js-21-card-game/blob/main/images/screenshotUI.png)
@@ -29,3 +29,5 @@ This project is a Work In Progress. For now you are able to test out the most ba
 - MAKE NEW GAME BUTTON 
 - UPDATE UGLY CSS & HOVER
 - ADD CARDS ? WE'LL SEE WHERE WE GET. 
+    
+    ### THANKS FOR PEEPIN Y'ALL 🤠
