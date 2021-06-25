@@ -30,4 +30,6 @@ This project is a Work In Progress. For now you are able to test out the most ba
 - UPDATE UGLY CSS & HOVER
 - ADD CARDS ? WE'LL SEE WHERE WE GET. 
     
-    ### THANKS FOR PEEPIN Y'ALL 🤠
+    ### THANKS FOR PEEPIN Y'ALL 🤠 
+## Patch notes :
+    - Added Restart button
