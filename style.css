@@ -67,15 +67,18 @@ header h1{
 
 /* STYLE HAND AND HAND VALUE HMTL */
 #game-status {
-    
+    font-size: 1.8rem;
+}
+#player-hand {
+    font-size: 1.6rem;
 }
 #dealer-hand {
-    
+    font-size: 1.6rem;
 }
 #dealer-hand-value {
-    
+    font-size: 2rem;
 }
 
 #player-hand-value {
-    
+    font-size: 2rem;
 }
